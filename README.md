@@ -1,40 +1,38 @@
-<h1>UTMB - Puerto Vallarta 2024 Analytics</h1>
+# UTMB - Puerto Vallarta 2024 Analytics
 
-<h2>Description</h2>
+## Description
 
+This repository contains the SQL scripts used to analyze the UTMB Puerto Vallarta 2024 race results. Using SQLite, these queries explore key metrics such as runner performance, drop-out (DNF) rates, and demographics.   The project demonstrates practical SQL techniques, including Window Functions for category rankings, Common Table Expressions (CTEs) to compare individual times against averages, and LEFT JOINs to build complete race matrices with explicit zeros. It also includes data validation queries to check data accuracy before exporting the results for visualization.
 
-
-<h2>Languages Used</h2>
+## Languages Used
 
 - <b> SQL </b>
 
-<h2>SQL - business analysis queries</h2>
+## Environment Used
 
-- <b>JOINs</b>
+- SQLite
 
-- <b>CTEs</b>
+## Key SQL Concepts Used
 
-- <b>Window functions</b>
+- **JOINs**
 
-<h2>Environment Used</h2>
+- **Common Table Expressions (CTEs)**
 
-- <b>SQLite</b>
+- **Window Functions**
 
-<h2>Business Questions</h2>
-<ol> 
-  <li> Top 10 fastest finish times overall </li>
-    <ul><li> Top 10 fastest finish times by gender </li></ul>
-  <li> DNF (drop-out) rate by race/distance</li>
-    <ul><li>  DNF (drop-out) rate by gender </li></ul>
-  <li> Countries with the most participants (minimum sample size) </li>
-  <li> Gap between the overall category winner and the category average (CTE) </li>
-     <ul><li>   Gap between the overall race category winner and the race category average </li></ul>
-  <li> Ranking within each race + age category (window functions) </li>
-   <ul><li>  Ranking within each race + age category + gender </li></ul>
-  <li> Top 10% fastest finishers within each category (window functions) </li>
-  <li> Full grid of race × age category with explicit zeros (LEFT JOIN) </li>
-</ol>
+## Business Questions Analyzed
+1. **Top 10 fastest finish times overall**\
+  1.1 Top 10 fastest finish times by gender
+2. **DNF (drop-out) rate by race/distance**\
+  2.1 DNF (drop-out) rate by gender
+3. **Countries with the most participants (minimum sample size)**
+4. **Gap between the overall category winner and the category average (CTE)**\
+  4.1 Gap between the overall race category winner and the race category average
+5. **Ranking within each race + age category (window functions)**\
+  5.1 Ranking within each race + age category + gender
+6. **Top 10% fastest finishers within each category (window functions)**
+7. **Full grid of race × age category with explicit zeros (LEFT JOIN)**
 
-The file also includes a couple of validation queries (not business insights)
+> *Note: The file also includes validation queries to ensure data integrity prior to analysis.*
 
-<h2>Script walk-through:</h2>
+## Script walk-through
