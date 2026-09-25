@@ -82,3 +82,13 @@ This query isolates the elite tier of runners by filtering for the top 10% faste
    
 7. **Full grid of race × age category with explicit zeros (LEFT JOIN)**\
 When visualizing data in tools like Power BI, categories with no data often disappear entirely, breaking matrix visuals. To prevent this, a CROSS JOIN was first used to generate a complete cartesian product of all races and distinct age categories. Then, a LEFT JOIN connected the finisher results. Counting the matches explicitly returns a 0 where no finishers exist. The results exposed 23 completely empty race/age combinations — predominantly in the older (65-69, 70-74, 80+) and younger (U18, U20) demographics — ensuring the final dashboard reflects these gaps accurately.
+
+
+##  Data Validation Queries
+
+V1. **Runners linked to more than one race in the SAME edition.**\
+Within a single event edition, start times make it physically impossible for one runner to complete more than one distance.
+So any runner showing up here is certainly two different people who share: given_name, last_name, nationality).
+
+V2. **Referential integrity check: any corredor or carrera with zero resultados?**\
+As is well known, LEFT JOIN + IS NULL is the classic way to find rows with no match. Given how build_utmb_db.py populates these tables (corredores and carreras are both derived FROM the same raw rows that fill resultados), both queries below should return 0 rows — this query proves it instead of just assuming it.
