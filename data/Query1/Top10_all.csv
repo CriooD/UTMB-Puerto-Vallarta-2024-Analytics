@@ -1,0 +1,61 @@
+given_name,last_name,nationality,gender,race_name,race_category,time,time_rank
+Julián,VINASCO MARIN,Colombia,Men,Hikuri,100K,10:10:29,1
+Jupiter,CARERA CASAS,Mexico,Men,Hikuri,100K,10:23:52,2
+Paddy,O LEARY,Ireland,Men,Hikuri,100K,10:42:24,3
+Moises,JIMENEZ,Venezuela,Men,Hikuri,100K,10:54:29,4
+Jason,SCHLARB,United States of America,Men,Hikuri,100K,10:56:50,5
+Cornelio,CIPRIAN,Guatemala,Men,Hikuri,100K,11:12:02,6
+Carlos,LOREDO HERNANDEZ,Mexico,Men,Hikuri,100K,11:44:27,7
+Arden,YOUNG,Canada,Women,Hikuri,100K,11:53:51,8
+Jose Eliezer,ARCUBIA PATINO,Mexico,Men,Hikuri,100K,11:54:43,9
+Charles,PERROT-MINOT,Canada,Men,Hikuri,100K,12:02:54,10
+Remigio,HUAMAN QUISPE,Peru,Men,Wixárika,100M,16:20:20,1
+Samuel,COLLINS,United States of America,Men,Wixárika,100M,17:20:21,2
+Steven,DOLL,United States of America,Men,Wixárika,100M,18:57:46,3
+Edson Scorpion,CHAVEZ,Mexico,Men,Wixárika,100M,20:53:30,4
+Alyssa,CLARK,United States of America,Women,Wixárika,100M,21:38:51,5
+Marc-Antoine,FORAND,Canada,Men,Wixárika,100M,21:51:55,6
+Hector,FUENTES RIVERA,El Salvador,Men,Wixárika,100M,22:35:31,7
+Esteban Alejandro,MARIN TORRES,Chile,Men,Wixárika,100M,22:40:00,8
+Julius,VAINAUSKAS,Lithuania,Men,Wixárika,100M,22:50:33,9
+Kelsey,HOGAN,Canada,Women,Wixárika,100M,23:29:41,10
+Joshua Nathanael,VAZQUEZ EGURE,Mexico,Men,Pata Salada,10K,00:54:59,1
+Emilia,MARTÍNEZ MENDIVIL,Mexico,Women,Pata Salada,10K,01:00:10,2
+Garston,TREMBLAY,United States of America,Men,Pata Salada,10K,01:00:17,3
+Esteban,GONZALEZ JIMENEZ,Mexico,Men,Pata Salada,10K,01:00:29,4
+Luis Ricardo,ACOSTA AGUILAR,Mexico,Men,Pata Salada,10K,01:00:48,5
+Carlos,ROSAS,Mexico,Men,Pata Salada,10K,01:03:32,6
+Alexander,CONTRERAS,Mexico,Men,Pata Salada,10K,01:04:36,7
+Abraham,PEREZ RAMIREZ,Mexico,Men,Pata Salada,10K,01:08:21,8
+Alison,PONCE,United States of America,Women,Pata Salada,10K,01:08:27,9
+Israel,FLORES,Mexico,Men,Pata Salada,10K,01:11:27,10
+José Antonio,CHAVEZ CEJA,Mexico,Men,Ereno,20K,01:39:58,1
+Jose,OCHOA,Mexico,Men,Ereno,20K,01:40:16,2
+Hugo Adrian,CASTILLO ESTRADA,Mexico,Men,Ereno,20K,01:40:47,3
+Ashley,BRASOVAN,United States of America,Women,Ereno,20K,01:40:48,4
+Anonymous,__anon_946,Mexico,Men,Ereno,20K,01:42:42,5
+María Magdalena,BARBA LAZARO,Mexico,Women,Ereno,20K,01:43:05,6
+Ricardo,MEJIA HERNANDEZ,Mexico,Men,Ereno,20K,01:43:37,7
+Kristian,ANDRES,Canada,Men,Ereno,20K,01:50:20,8
+José Antonio,DE PABLO,Spain,Men,Ereno,20K,02:02:56,9
+Roberto,VILLAFAÑA RODRÍGUEZ,Mexico,Men,Ereno,20K,02:02:56,9
+Abraham,HERNANDEZ,Mexico,Men,Haramara,33K,03:01:56,1
+Jhoan Sebastian,RIVERA ALAPE,Colombia,Men,Haramara,33K,03:26:26,2
+Francisco Axel,CORONA CARRETERO,Mexico,Men,Haramara,33K,03:46:08,3
+Jonatan Uriel,MENDIETA CASTILLO,Mexico,Men,Haramara,33K,03:57:43,4
+Ricardo,CHAVARRIA,Mexico,Men,Haramara,33K,04:01:50,5
+Frida,CERVANTES,Mexico,Women,Haramara,33K,04:04:47,6
+Emilie,MANN,Canada,Women,Haramara,33K,04:06:02,7
+Luis Arturo,VALENZUELA GRIJALVA,Mexico,Men,Haramara,33K,04:06:18,8
+Denisse,SANCHEZ,Mexico,Women,Haramara,33K,04:06:22,9
+Andres,ORDONEZ,Mexico,Men,Haramara,33K,04:06:37,10
+Joren,TITUS,Canada,Men,Nakawé,50K,05:20:40,1
+Sara,ALONSO,Spain,Women,Nakawé,50K,05:25:54,2
+Emerson,TRUJILLO FLORES,Peru,Men,Nakawé,50K,05:25:54,2
+David,NORRIS,United States of America,Men,Nakawé,50K,05:26:18,4
+Juan Carlos,CARERA CASAS,Mexico,Men,Nakawé,50K,05:27:31,5
+Nicolas,PALACIOS,Chile,Men,Nakawé,50K,05:29:44,6
+Christopher,LEVESQUE-SAVARD,Canada,Men,Nakawé,50K,05:40:23,7
+Roberto Carlos,VARGAS VIDAURRI,Mexico,Men,Nakawé,50K,05:45:05,8
+Javier,JANEIRO CERDEIRA,Mexico,Men,Nakawé,50K,06:06:51,9
+David,CLARK,United States of America,Men,Nakawé,50K,06:07:19,10
