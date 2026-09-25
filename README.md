@@ -65,15 +65,20 @@ The nationality data shows a heavy long-tail distribution (Mexico accounts for t
 - **For visual reporting** (Power BI): A simple LIMIT 10 is used to build clean, uncluttered bar charts showing the top participating countries without overcomplicating the dashboard.
 
 4. **Gap between the overall category winner and the category average (CTE)**\
-  
+To measure performance dominance, this query calculates how far ahead a category winner was compared to the average runner in their specific age group. A technical challenge here was converting string-based times ("HH:MM:SS") into total seconds using a CTE to allow for accurate mathematical aggregation (MIN and AVG). Additionally, a HAVING COUNT(*) >= 2 filter was applied to exclude categories with only one finisher, preventing meaningless 0.0-minute gaps. The data reveals massive leads in longer distances: in the 100M (Wixárika), Remigio Huaman Quispe (40-44) beat his category average by 898.2 minutes — an almost 15-hour advantage.
    
 4.1 **Gap between the overall race category winner and the race category average**\
+Using the same time-conversion methodology, the aggregation shifts from age groups to the entire race distance. This evaluates the absolute champion's dominance over the entire field. Remigio Huaman Quispe’s performance stands out again: not only did he dominate his age group, but he also finished 827.9 minutes (~14 hours) faster than the overall average of all 100M finishers.
   
   
 5. **Ranking within each race + age category (window functions)**\
+This query builds a micro-leaderboard by calculating the exact finishing position for every runner within their specific race and age group. Using the RANK() OVER (PARTITION BY...) window function instead of a standard GROUP BY preserves row-level details (like runner names). Similar to query 1b, RANK() handles real ties correctly: in the 100K (20-34 category), Apolline Dewatre and Maxime Gregorieff crossed the finish line at the exact same second (20:57:25) and were properly tied for 42nd place.
 
   5.1 **Ranking within each race + age category + gender**\
+ Expanding on the previous query, two parallel RANK() window functions were used to compute multi-dimensional standings in a single pass. This allows us to see a runner's position both within their age group and across their entire gender division without needing complex self-joins. It highlights dual achievements, such as Julián Vinasco Marin winning both his category (40-44) and the overall men's 100K, or Arden Young placing 3rd in her age group (35-39) but taking 1st place in the overall women's 100K.
    
 6. **Top 10% fastest finishers within each category (window functions)**\
+This query isolates the elite tier of runners by filtering for the top 10% fastest times in every specific race distance and age group. The NTILE(10) window function was used inside a CTE (since window functions cannot be placed directly in a WHERE clause) to divide the partitioned datasets into deciles. The engine handles remainders smartly: for instance, in the 100K 20-34 category with 53 finishers, it correctly assigned the top 6 runners to the first decile.
    
 7. **Full grid of race × age category with explicit zeros (LEFT JOIN)**\
+When visualizing data in tools like Power BI, categories with no data often disappear entirely, breaking matrix visuals. To prevent this, a CROSS JOIN was first used to generate a complete cartesian product of all races and distinct age categories. Then, a LEFT JOIN connected the finisher results. Counting the matches explicitly returns a 0 where no finishers exist. The results exposed 23 completely empty race/age combinations — predominantly in the older (65-69, 70-74, 80+) and younger (U18, U20) demographics — ensuring the final dashboard reflects these gaps accurately.
